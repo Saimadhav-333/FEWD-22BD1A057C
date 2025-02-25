@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Example</title>
+</head>
+<body>
+    <div id="d">This has to be changed</div>
+    <input type="button" value="Change Content" onclick="fun()">
+    <input type="text" id="submit">
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+        const mydiv = (
+            <div>
+                <p>Hello, I am Shireesh from KMIT</p>
+                <input type="button" value="Click Me" />
+            </div>
+        );
+
+        function fun() {
+            const pnode = document.getElementById('d');
+            ReactDOM.createRoot(pnode).render(mydiv);
+            document.getElementById('submit').style.display = "none";
+        }
+    </script>
+</body>
+</html>
