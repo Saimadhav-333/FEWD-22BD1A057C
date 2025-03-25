@@ -1,0 +1,11 @@
+.box{
+    font-size: 30px;
+}
+.dis{
+    /* display: none; */
+    margin: 20px;
+    font-size: 20px;
+}
+.container{
+    padding-top: 50px;
+}
